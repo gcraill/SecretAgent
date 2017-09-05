@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>I am Groot | Codecademy</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
   </head>
 	
   <body>
@@ -13,17 +13,35 @@
 	
 		<!--		---------------------------------			-->
 		<header>
-      <div class="logo">
+		
+			<!--		A flex box to position the two elements in line with each other		-->
+      <div class="container">
+				<div class="flexbox head-logo">
+					<img class='logo' src="./resources/images/logo.png" alt='Secret Agent Supply Logo'>
+					<span class='site-name'>Secret Agent Supply Inc.</span>
+				</div>
       </div>
-      <div class="banner">
+			
+			<!--		A flex box to center the text inside the image		-->
+      <div class="container banner-img">
+				<div class="flexbox featured-outer">
+					<div class="featured-inner">
+						<h4>NEW ARRIVAL</h4>
+						<h1>SPORTS BIKES AND MOTORCYCLES</h4>
+					</div>
+				</div>
       </div>
-      <nav class="navigation">
-				<a href="#">Eyewear</a>
-				<a href="#">Apparel</a>
-				<a href="#">Gadgets</a>
-				<a href="#">Vehicles</a>
-				<a href="#">Glasses</a>
-				<a href="#">Contact</a>
+			
+			<!--		A flex box to position the nav links equally		-->
+      <div class="container head-nav">
+				<nav class='flexbox'>
+					<a href="#">Eyewear</a>
+					<a href="#">Apparel</a>
+					<a href="#">Gadgets</a>
+					<a href="#">Vehicles</a>
+					<a href="#">Glasses</a>
+					<a href="#">Contact</a>
+				</div>
       </div>
     </header>
 		<!--		---------------------------------			-->
@@ -31,7 +49,13 @@
 
 		<!--		---------------------------------			-->
 		<main>
-      <div class="xxx">
+      <div class="content-row flexbox">
+				<div class='content-box'>
+					<img class='content-img' src="./resources/images/pen.png" alt='Exploding Pen'>
+					<div class='label-box'>
+						<span class='img-label'>Exploding Pen</span>
+					</div>
+				</div>
       </div>
    </main>
 		<!--		---------------------------------			-->
