@@ -17,10 +17,6 @@ body {
 	color: white;
 }
 
-.container {
-	/* width: 1080px; */
-	width: 100%;
-}
 .flexbox {
 	display: flex;
 }
@@ -55,12 +51,16 @@ header {
 	background-image: url("../images/moto.jpeg");
 	background-size: cover;
 	height: 25rem;
-	align-items: center;
-	margin: auto;
 	display: flex;
+  justify-content: center;
 }
 .featured-outer {
+	width: 960px;
+	margin: auto;
+	display: flex;
 	margin-top: 9rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 .featured-inner {
 	background-color: black;
@@ -125,7 +125,6 @@ main {
 	height: 15rem;
 	flex-direction: column;
 }
-
 .content-img {
 	height: 9rem;
 	padding-top: 2rem;
@@ -134,14 +133,12 @@ main {
 .img-box {
 	margin: auto;
 }
-
 .label-box {
 	background-color: black;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	text-align: center;
 }
-
 .content-box-topic {
 	width: 35%;
 	flex-direction: column;
@@ -221,7 +218,6 @@ footer {
 	}
 	.banner-img {
 		height: 15rem;
-		align-items: left;
 		display: flex;
 	}
 	.content-row {
@@ -237,6 +233,11 @@ footer {
 		text-align: center;
 		margin: auto;
 	}
-
+	div#lococall {
+		flex-wrap: wrap;
+	}
+	#loco {
+		padding-bottom: .5rem;
+	}
 }
 /*	==================================================	*/
