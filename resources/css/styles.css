@@ -18,13 +18,14 @@ body {
 }
 
 .container {
-	width: 1080px;
+	/* width: 1080px; */
+	width: 100%;
 }
 .flexbox {
 	display: flex;
 }
 .flexrow {
-	width: 960px;
+	max-width: 960px;
 	margin: auto;
 	display: flex;
 }
@@ -32,7 +33,8 @@ body {
 header {
 	margin: auto;
 	background-color: black;
-	width: 1080px;
+	/* width: 1080px; */
+	width: 100%;
 }
 /*	LOGO section is the top line	*/
 .head-logo {
@@ -51,6 +53,7 @@ header {
 /*	BANNER section is the image and splash panel	*/
 .banner-img {
 	background-image: url("../images/moto.jpeg");
+	background-size: cover;
 	height: 25rem;
 	align-items: center;
 	margin: auto;
@@ -67,12 +70,14 @@ header {
 	padding-top: 2rem;
 	padding-left: 3rem;
 	font-size: 1rem;
+	font-weight: bold;
 }
 .featured-inner  h1{
 	padding-top: .25rem;
 	padding-left: 3rem;
 	font-size: 2rem;
 	padding-bottom: 2rem;
+	font-weight: bold;
 }
 
 /*	NAV section is the links bar	*/
@@ -89,11 +94,23 @@ nav a {
 	text-decoration: none;
 	color: white;
 }
+nav.sm-menu-bar {
+  display: none;
+}
+nav.lg-menu-bar {
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+}
+
+
+
 
 main {
 	margin: auto;
 	background-color: white;
-	width: 1080px;
+	/* width: 1080px; */
+	width: 100%;
 }
 .content-row {
 	padding-top: 3rem;
@@ -142,12 +159,84 @@ main {
 footer {
 	margin: auto;
 	background-color: black;
-	width: 1080px;	
+	/* width: 1080px; */
+	width: 100%;
 }
-.egg {
+.copyright {
 	align-items: center;
 }
 .footer-box {
 	padding-top: 2rem;
 	height: 5rem;
+	text-align: left;
 }
+
+/*	==================================================	*/
+@media only screen and (max-width: 1024px) {
+	nav.sm-menu-bar {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+	nav.lg-menu-bar {
+		display: none;
+	}
+	div#glasses {
+		display: none;
+	}
+	.content-box-img {
+		width: 47%;
+	}
+}
+/*	==================================================	*/
+
+/*	==================================================	*/
+/*	
+		ok we need to change lots here for this view size.
+		-	location to be .5 rem above hours not next to it
+		-	copyright align center
+		- change font sizes of header stuff
+*/
+/*	==================================================	*/
+@media only screen and (max-width: 470px) {
+	.content-box-img,
+	.content-box-topic {
+		width: 90%;
+	}
+	div#watch {
+		display: none;
+	}
+	.featured-inner  h4{
+		padding-top: 1rem;
+		padding-left: 2rem;
+		font-size: .77rem;
+	}
+	.featured-inner  h1{
+		padding-top: .5rem;
+		padding-bottom: 1.5rem;
+		padding-left: 2rem;
+		font-size: 1rem;
+	}
+	.banner-img {
+		height: 15rem;
+		align-items: left;
+		display: flex;
+	}
+	.content-row {
+		justify-content: center;
+	}
+	.copyright  {
+		justify-content: center;
+	}
+	.featured-outer {
+		margin-top: 10rem;
+	}
+	div.footer-box {
+		text-align: center;
+		margin: auto;
+	}
+
+}
+/*	==================================================	*/

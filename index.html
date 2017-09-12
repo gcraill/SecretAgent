@@ -15,7 +15,7 @@
 		<header>
 		
 			<!--		A flex box to position the two elements in line with each other		-->
-      <div class="container">
+      <div class="">
 				<div class="flexrow head-logo">
 					<img class='logo' src="./resources/images/logo.png" alt='Secret Agent Supply Logo'>
 					<span class='site-name'>Secret Agent Supply Inc.</span>
@@ -23,7 +23,7 @@
       </div>
 			
 			<!--		A flex box to center the text inside the image		-->
-      <div class="container banner-img">
+      <div class=" banner-img">
 				<div class="flexrow featured-outer">
 					<div class="featured-inner">
 						<h4>NEW ARRIVAL</h4>
@@ -33,16 +33,22 @@
       </div>
 			
 			<!--		A flex box to position the nav links equally		-->
-      <div class="container head-nav">
-				<nav class='flexrow'>
+      <div class="head-nav  menu-large-screens">
+				<nav class='lg-menu-bar'>
 					<a href="#">Eyewear</a>
 					<a href="#">Apparel</a>
 					<a href="#">Gadgets</a>
 					<a href="#">Vehicles</a>
 					<a href="#">Glasses</a>
 					<a href="#">Contact</a>
-				</div>
-      </div>
+				</nav>
+				<nav class='sm-menu-bar'>
+					<a href="#" >Menu</a>
+				</nav>
+			</div>
+			
+			
+			
     </header>
 		<!--		---------------------------------			-->
 	
@@ -52,7 +58,7 @@
 
 			<div class="content-row flexrow">
 				<!--		---------------------------------			-->
-				<div class='content-box-img flexbox'>
+				<div class='content-box-img flexbox' id='pen'>
 					<div class='img-box'>
 						<img class='content-img' src="./resources/images/pen.png" alt='Exploding Pen'>
 					</div>
@@ -61,7 +67,7 @@
 					</div>
 				</div>
 				<!--		---------------------------------			-->
-				<div class='content-box-img flexbox'>
+				<div class='content-box-img flexbox' id='watch'>
 					<div class='img-box'>
 						<img class='content-img' src="./resources/images/watch.png" alt='Exploding Pen'>
 					</div>
@@ -70,7 +76,7 @@
 					</div>
 				</div>
 				<!--		---------------------------------			-->
-				<div class='content-box-img flexbox'>
+				<div class='content-box-img flexbox' id='glasses'>
 					<div class='img-box'>
 						<img class='content-img' src="./resources/images/glasses.png" alt='Exploding Pen'>
 					</div>
@@ -83,7 +89,7 @@
 			
 			<div class="content-row flexrow">
 				<!--		---------------------------------			-->
-				<div class='content-box-topic flexbox'>
+				<div class='content-box-topic flexbox' id='loco'>
 					<div class='topic-box'>
 						<span>Location</span>
 					</div>
@@ -92,7 +98,7 @@
 					</div>
 				</div>
 				<!--		---------------------------------			-->
-				<div class='content-box-topic flexbox'>
+				<div class='content-box-topic flexbox' id='hours'>
 					<div class='topic-box'>
 						<span>Hours</span>
 					</div>
@@ -109,9 +115,9 @@
 		
 		<!--		---------------------------------			-->
     <footer>
-      <div class="container">
+      <div class="">
 				<!--		---------------------------------			-->	
-				<div class="flexrow egg">
+				<div class="flexrow copyright">
 					<div class='footer-box'>
 						<p>Copyright Secret Agent Supply Inc.</p>
 					</div>
