@@ -17,19 +17,25 @@ body {
 	color: white;
 }
 
-.flexbox {
-	display: flex;
-}
-.flexrow {
+.head-logo,
+.content-row,
+.copyright {
 	max-width: 960px;
 	margin: auto;
+}
+.head-logo,
+.content-row,
+.copyright,
+.content-box-topic,
+.content-box-img {
 	display: flex;
 }
 
+
+/*	--------------------------------------------------	*/
 header {
 	margin: auto;
 	background-color: black;
-	/* width: 1080px; */
 	width: 100%;
 }
 /*	LOGO section is the top line	*/
@@ -102,14 +108,13 @@ nav.lg-menu-bar {
 	margin: auto;
 	display: flex;
 }
+/*	--------------------------------------------------	*/
 
 
-
-
+/*	--------------------------------------------------	*/
 main {
 	margin: auto;
 	background-color: white;
-	/* width: 1080px; */
 	width: 100%;
 }
 .content-row {
@@ -152,11 +157,14 @@ main {
 .info-box {
 	color: black;
 }
+/*	--------------------------------------------------	*/
 
+
+
+/*	--------------------------------------------------	*/
 footer {
 	margin: auto;
 	background-color: black;
-	/* width: 1080px; */
 	width: 100%;
 }
 .copyright {
@@ -167,7 +175,12 @@ footer {
 	height: 5rem;
 	text-align: left;
 }
+/*	--------------------------------------------------	*/
 
+
+
+/*	==================================================	*/
+/*	#		TABLET view size alterations as per redline	 #	*/
 /*	==================================================	*/
 @media only screen and (max-width: 1024px) {
 	nav.sm-menu-bar {
@@ -189,13 +202,10 @@ footer {
 }
 /*	==================================================	*/
 
+
+
 /*	==================================================	*/
-/*	
-		ok we need to change lots here for this view size.
-		-	location to be .5 rem above hours not next to it
-		-	copyright align center
-		- change font sizes of header stuff
-*/
+/*	#		MOBILE view size alterations as per redline	 #	*/
 /*	==================================================	*/
 @media only screen and (max-width: 470px) {
 	.content-box-img,
