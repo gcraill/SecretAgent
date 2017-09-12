@@ -239,6 +239,9 @@ footer {
 	.featured-outer {
 		margin-top: 10rem;
 	}
+	.featured-inner {
+		width: 100%;
+	}
 	div.footer-box {
 		text-align: center;
 		margin: auto;
