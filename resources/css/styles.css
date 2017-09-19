@@ -199,7 +199,8 @@ footer {
 	.content-box-img {
 		width: 47%;
 	}
-	.featured-outer {
+	.featured-outer,
+	.content-row {
 		margin: 0;
 	}
 }
